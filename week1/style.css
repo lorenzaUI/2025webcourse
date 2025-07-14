@@ -55,6 +55,7 @@ table {
 :root {
   --primary-100: #F5FEE7;
   --primary-400: #57A203;
+  --primary-500: #477A11;
   --neutral-0: #ffffff;
   --neutral-100: #F8F9FA;
   --neutral-300: #DEE2E6;
@@ -84,6 +85,10 @@ a {
   color: var(--primary-400);
   text-underline-offset: 4px;
   display: block;
+}
+
+a:hover {
+  color: var(--primary-500);
 }
 
 footer {
@@ -206,6 +211,9 @@ footer {
 .py-64 {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+.ms-8 {
+  margin-left: 8px;
 }
 
 .mb-16 {
