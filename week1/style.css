@@ -500,4 +500,29 @@ footer {
   margin-top: 48px;
 }
 
+.product-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.footer-item a {
+  display: block;
+  color: var(--neutral-900);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
