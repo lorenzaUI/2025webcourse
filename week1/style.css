@@ -88,6 +88,7 @@ a {
   color: var(--primary-400);
   text-underline-offset: 4px;
   display: block;
+  text-decoration: none;
 }
 
 a:hover {
@@ -116,16 +117,29 @@ footer {
 
 .btn {
   background-color: transparent;
-  border: transparent;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-icon {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: calc(1rem + 1.5em + 2px);
+  width: calc(1rem + 1.5em + 2px);
   padding: 0;
 }
 
 .btn-icon .bi{
-  display: inline-block;
-  padding: 12px 12px;
+  padding: 12px;
   font-size: 24px;
-  width: 48px;
-  height: 48px;
+  vertical-align: middle;
 }
 
 .btn-icon .bi:hover {
@@ -134,12 +148,8 @@ footer {
 }
 
 .btn-neutral {
-  padding: 12px 24px;
-  border-radius: 4px;
   background-color: var(--neutral-900);
   color: var(--neutral-0);
-  letter-spacing: 0.05em;
-  line-height: 1.5;
 }
 
 .text-center {
@@ -280,6 +290,14 @@ footer {
 
 .ms-8 {
   margin-left: 8px;
+}
+
+.me-8 {
+  margin-right: 8px;
+}
+
+.me-12 {
+  margin-right: 12px;
 }
 
 .me-24 {
@@ -465,11 +483,8 @@ footer {
 
 .pagination {
   display: flex;
-  margin: 0 auto;
-}
-
-.pagination ul{
-  display: inline;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-item {
@@ -482,17 +497,18 @@ footer {
   padding-right: 0;
 }
 
-.page-item a {
-  display: inline;
-  text-decoration: none;
-  color: var(--neutral-900);
-  transition: background-color .3s;
+.page-item .btn {
   padding: 8px 15px;
-  text-underline-offset: 0;
-  margin: 0 8px;
+  border-radius: 0;
+  font-weight: 400;
 }
 
-.page-item a:active {
+.page-item .btn.active {
+  background-color: var(--primary-300);
+  font-weight: 500;
+}
+
+.page-item .btn:hover {
   background-color: var(--primary-300);
 }
 
