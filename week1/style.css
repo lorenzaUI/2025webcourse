@@ -96,6 +96,9 @@ a:hover {
 
 footer {
   background-color: var(--neutral-100);
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 /* 通用樣式 */
@@ -324,20 +327,19 @@ footer {
 }
 
 .nav-brand {
-  /* padding: 8px 12px; */
   margin-right: 48px;
 }
 
-.nav-item {
+.nav-item, .footer-item {
   padding: 12px 0px;
   margin-right: 40px;
 }
 
-.nav-item a {
+.nav-item a, .footer-item a {
   color: var(--neutral-900);
 }
 
-.nav-item a:hover {
+.nav-item a:hover, .footer-item a:hover {
   color: var(--primary-400);
   cursor: pointer;
 }
@@ -500,29 +502,34 @@ footer {
   margin-top: 48px;
 }
 
-.product-footer {
+.footer-navbar {
+  max-width: 1296px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.product-footer-list {
+.footer-brand {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-link {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  display: inline-flex;
 }
 
-.footer-item a {
-  display: block;
-  color: var(--neutral-900);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.footer-item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.copyright-area {
+  max-width: 1296px;
+  border-top: 1px solid var(--neutral-300);
+  padding-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
