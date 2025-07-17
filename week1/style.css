@@ -82,6 +82,8 @@ body {
 
 img {
   vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -111,8 +113,105 @@ footer {
 .container-lg {
   max-width: 1296px;
   margin: 0 auto;
-  /* margin-left: 312px;
-  margin-right: 321px; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.col-1 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12);
+}
+
+.col-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -475,10 +574,6 @@ footer {
 
 .card-title {
   padding-bottom: 4px;
-}
-
-.justify-content-center {
-  justify-content: center;
 }
 
 .pagination {
