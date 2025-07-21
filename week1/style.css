@@ -65,6 +65,18 @@ table {
   --neutral-500: #ADB5BD;
   --neutral-600: #6C757D;
   --neutral-900: #212529;
+  --danger-100: #FCF1F1;
+  --danger-200: #EBA7A7;
+  --danger-300: #D74F4F;
+  --warning-100: #FEF6EC;
+  --warning-200: #F9C588;
+  --warning-300: #F38B12;
+  --success-100: #EFF8F4;
+  --success-200: #9AD1BA;
+  --success-300: #36A375;
+  --info-100: #EEF5FC;
+  --info-200: #97C3ED;
+  --info-300: #3087DB;
 }
 
 
@@ -196,7 +208,41 @@ footer {
 }
 
 .d-flex {
+  display: flex !important;
+}
+
+.d-grid {
+  display: grid !important;
+}
+
+.hstack {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.vstack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
 }
 
 .justify-between {
@@ -227,6 +273,10 @@ footer {
   cursor: pointer;
 }
 
+.btn:disabled, .btn.disabled {
+  opacity: 0.4
+}
+
 .btn-icon {
   display: inline-flex;
   position: relative;
@@ -254,6 +304,18 @@ footer {
 }
 
 .btn-outline-neutral {
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-900);
+  color: var(--neutral-900);
+}
+
+.btn-outline-neu300 {
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-300);
+  color: var(--neutral-900);
+}
+
+.btn-outline-neu300.active {
   background-color: var(--neutral-0);
   border: 1px solid var(--neutral-900);
   color: var(--neutral-900);
@@ -321,24 +383,28 @@ footer {
   color: var(--neutral-600);
 }
 
-.text-primary-400 {
+.text-highlight {
   color: var(--primary-400);
 }
 
-.text-neutral-0 {
-  color: var(--neutral-0);
+.text-primary {
+  color: var(--neutral-900);
 }
 
-.text-neutral-300 {
-  color: var(--neutral-300);
-}
-
-.text-neutral-600 {
+.text-secondary {
   color: var(--neutral-600);
 }
 
-.text-neutral-900 {
-  color: var(--neutral-900);
+.text-muted {
+  color: var(--neutral-500);
+}
+
+.text-on-dark {
+  color: var(--neutral-0);
+}
+
+.text-danger-300 {
+  color: var(--danger-300);
 }
 
 .bg-primary-100 {
@@ -391,6 +457,16 @@ footer {
 .py-24 {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.py-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .py-64 {
@@ -623,6 +699,31 @@ footer {
   text-decoration-line: line-through;
 }
 
+.product-action {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.product-action .btn {
+  width: 50%;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card-wrapper .card-img-top {
+  width: 306px;
+}
+
+.card-wrapper .card-header {
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+
 .card-title {
   padding-bottom: 4px;
 }
@@ -661,21 +762,21 @@ footer {
 .special-action  {
   display: flex;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 40px;
 }
 
-.special-cta .btn-wraper {
+.btn-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.special-cta .btn-wraper .option {
+.btn-wrapper .option {
   width: 64px;
   height: auto;
 }
 
-.special-cta .btn-wraper img {
+.btn-wrapper img {
   width: 64px;
   padding-bottom: 4px;
 }
@@ -683,6 +784,27 @@ footer {
 .special-cta p.option-text {
   color: var(--neutral-600);
   text-align: center;
+}
+
+.size-btn {
+  width: 160px;
+}
+
+.accordition-item {
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.accordition-item .accordition-title {
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+
+.accordition-item .accordition-paragraph {
+  color: var(--neutral-600);
+}
+
+.accordition-item .accordition-paragraph:nth-last-child(1) {
+  padding-bottom: 12px;
 }
 
 .footer-navbar {
