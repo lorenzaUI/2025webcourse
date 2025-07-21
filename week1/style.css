@@ -309,6 +309,13 @@ footer {
   color: var(--neutral-900);
 }
 
+.btn-outline-neutral:hover:not(:disabled) {
+  background-color: var(--neutral-900);
+  border: 1px solid var(--neutral-900);
+  color: var(--neutral-0);
+  transition: ease-in-out 0.35s;
+}
+
 .btn-outline-neu300 {
   background-color: var(--neutral-0);
   border: 1px solid var(--neutral-300);
@@ -320,6 +327,15 @@ footer {
   border: 1px solid var(--neutral-900);
   color: var(--neutral-900);
 }
+
+.btn-outline-neu300:hover:not(:disabled) {
+  background-color: var(--neutral-900);
+  border: 1px solid var(--neutral-900);
+  color: var(--neutral-0);
+  transition: ease-in-out 0.35s;
+}
+
+
 
 .text-center {
   text-align: center;
@@ -417,6 +433,14 @@ footer {
 
 .bg-neutral-100 {
   background: var(--neutral-100);
+}
+
+.link-primary {
+  color: var(--primary-400);
+}
+
+.link-primary:hover {
+  color: var(--primary-500);
 }
 
 .px-8 {
