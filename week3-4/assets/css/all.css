@@ -128,21 +128,17 @@ footer {
 
 /* 通用樣式 */
 .container {
-  max-width: 856px;
-  margin: 0 auto;
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 576px) {
   .container {
     padding: 32px 12px;
   }
-}
-
-.container-lg {
-  max-width: 1296px;
-  margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .row {
