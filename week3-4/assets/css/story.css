@@ -1,0 +1,107 @@
+.bg-hero {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/e1ad10bd2260f80c5f65be5bfc5042790a261115/2025-week1/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 152px 0;
+}
+
+.bg-intro {
+  max-width: 1076px;
+  margin-left: -110px;
+  margin-right: -110px;
+  margin-bottom: 24px;
+}
+
+.quote {
+  text-align: center;
+  padding: 32px;
+  margin-bottom: 48px;
+}
+
+.intro, .history, .concept, .story {
+  border-bottom: 1px solid var(--neutral-300);
+  margin-bottom: 48px;
+}
+
+.intro-title, .history-title, .concept-title, .story-title {
+  margin-bottom: 24px;
+}
+
+.intro-heading {
+  color: var(--primary-400);
+  margin-bottom: 16px;
+}
+
+.history li {
+  margin-left: 10px;
+  list-style: inside;
+}
+
+.historyLabel {
+  border-left: 1px solid var(--neutral-900);
+}
+
+.conceptLabel {
+  border-left: 3px solid var(--neutral-300);
+}
+
+.story {
+  margin-bottom: 0;
+}
+
+.story-link {
+  padding-bottom: 48px;
+}
+
+.cta-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .intro, .history, .concept, .story {
+    border-bottom: 1px solid var(--neutral-300);
+    margin-bottom: 32px;
+  }
+  .bg-hero {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/hero-sm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 87px 0;
+  }
+  .ch-title {
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+  .en-title {
+    font-size: 20px;
+  }
+  .quote {
+    text-align: start;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  .bg-intro {
+    max-width: 343px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .intro-title, .history-title, .concept-title, .story-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .intro-heading {
+    color: var(--primary-400);
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .story-link {
+    padding-bottom: 32px;
+  }
+  .cta-text {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

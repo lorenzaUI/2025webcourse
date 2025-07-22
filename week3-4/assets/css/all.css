@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import "./story.css";
 
 /* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -117,15 +118,31 @@ footer {
   padding-bottom: 64px;
 }
 
+@media (max-width: 576px) {
+  footer {
+    background-color: var(--neutral-100);
+    text-align: center;
+    padding: 32px 12px;
+  }
+}
+
 /* 通用樣式 */
 .container {
   max-width: 856px;
   margin: 0 auto;
 }
 
+@media (max-width: 576px) {
+  .container {
+    padding: 32px 12px;
+  }
+}
+
 .container-lg {
   max-width: 1296px;
   margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .row {
@@ -335,8 +352,6 @@ footer {
   transition: ease-in-out 0.35s;
 }
 
-
-
 .text-center {
   text-align: center;
 }
@@ -437,6 +452,8 @@ footer {
 
 .link-primary {
   color: var(--primary-400);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .link-primary:hover {
@@ -471,6 +488,10 @@ footer {
 
 .pb-32 {
   padding-bottom: 32px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
 }
 
 .py-8 {
@@ -546,44 +567,61 @@ footer {
   margin-bottom: 64px;
 }
 
+@media (max-width: 576px) {
+  .py-md-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .pb-md-32 {
+    padding-bottom: 32px;
+  }
+
+  .me-md-16 {
+    margin-right: 16px;
+  }
+
+  .mb-md-12 {
+    margin-bottom: 12px;
+  }
+}
+
 /* 自訂 */
-.navbar {
+nav {
   max-width: 1296px;
-  height: 80px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-
-.nav-list {
+nav ul {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.nav-list ul {
-  display: flex;
-  align-items: center;
+.nav-item.nav-brand {
+  margin-right: 48px;
+}
+
+.nav-item:nth-child(n+2) {
+  margin-right: 40px;
 }
 
 @media (max-width: 576px) {
-  .navbar {
+  nav {
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  .nav-list ul {
+  .navbar .nav-item:nth-child(n+2) {
     display: none;
   }
-}
-
-.nav-brand {
-  margin-right: 48px;
-}
-
-.nav-item, .footer-item {
-  padding: 12px 0px;
-  margin-right: 40px;
 }
 
 .nav-item a, .footer-item a {
@@ -595,41 +633,7 @@ footer {
   cursor: pointer;
 }
 
-.bg-hero {
-  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/e1ad10bd2260f80c5f65be5bfc5042790a261115/2025-week1/hero.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 152px 0;
-}
 
-.bg-intro {
-  max-width: 1076px;
-  margin-left: -110px;
-  margin-right: -110px;
-}
-
-.intro, .history, .concept, .story {
-  border-bottom: 1px solid var(--neutral-300);
-  margin-bottom: 48px;
-}
-
-.history li {
-  margin-left: 10px;
-  list-style: inside;
-}
-
-.historyLabel {
-  border-left: 1px solid var(--neutral-900);
-}
-
-.conceptLabel {
-  border-left: 3px solid var(--neutral-300);
-}
-
-.story {
-  margin-bottom: 0;
-}
 
 .bi {
   padding-right: 8px;
@@ -797,7 +801,6 @@ footer {
 .special-action  {
   display: flex;
   align-items: center;
-  margin-top: 40px;
 }
 
 .btn-wrapper {
@@ -848,7 +851,6 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -857,8 +859,13 @@ footer {
   align-items: center;
 }
 
-.footer-link {
-  display: inline-flex;
+.footer-navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  margin-right: 40px;
 }
 
 .footer-item:nth-last-child(1) {
@@ -873,3 +880,28 @@ footer {
   margin-right: auto;
 }
 
+@media (max-width: 576px) {
+  .footer-navbar {
+    display: block;
+  }
+
+  .footer-link {
+    display: block;
+  }
+
+  .footer-navbar ul {
+    display: block;
+    padding: 0px 12px;
+    gap: 4px;
+  }
+
+  .footer-item {
+    text-align: start;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .footer-item {
+    margin-right: 0;
+  }
+}
