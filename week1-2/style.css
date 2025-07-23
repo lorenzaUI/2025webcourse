@@ -677,7 +677,6 @@ footer {
 }
 
 .product-list {
-  width: 1076px;
   max-width: 1076px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0px, 1fr));

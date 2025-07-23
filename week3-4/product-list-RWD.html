@@ -3,42 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 2 產品列表頁 2025切版直播班</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>Week3-4 | 產品列表頁 歐荻</title>
+  <link rel="stylesheet" href="./assets/css/all.css">
+  <link rel="stylesheet" href="./assets/css/product-list.css">
 </head>
 <body>
-  <div class="container-lg">
-    <div class="navbar">
-      <div class="nav-list">
-        <div class="nav-brand">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg" alt="logo">
-        </div> 
-        <ul>
-          <li class="nav-item">
-            <a href="./product-list-RWD.html">商品列表</a>
-          </li>
-          <li class="nav-item">
-            <a href="./story-RWD.html">品牌故事</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="py-16">
+    <div class="navbar"> 
+      <ul>
+        <li class="nav-item nav-brand">
+          <a href="#!">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg" alt="logo">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./product-list-RWD.html">商品列表</a>
+        </li>
+        <li class="nav-item">
+          <a href="./story-RWD.html">品牌故事</a>
+        </li>
+      </ul>
       <div class="nav-btn">
         <button type="button" class="btn btn-icon"><i class="bi bi-person"></i></button>
       </div>
     </div>
-    <div class="breadcrumb pt-32 mb-24">
-      <ol>
-        <li class="breadcrumb-item">
-          <a href="#!">首頁</a>
-        </li>
-        <li class="breadcrumb-item active">
-          <a href="./products-list.html">商品列表</a>
-        </li>
-      </ol>
+  </nav>
+  <div class="container py-32 py-md-16">
+    <div class="row">
+      <div class="col-12">
+        <!-- breadcrumb -->
+        <div class="page-title-box breadcrumb">
+          <ol>
+            <li class="breadcrumb-item">
+              <a href="#!">首頁</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a>女鞋</a>
+            </li>
+            <li class="breadcrumb-item active">
+              <a>所有商品</a>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
+
     <!-- page-title -->
-    <div class="page-title mb-24">
-      <span class="h3">所有商品</span>
+    <div class="page-title">
+      <span class="h3">女鞋</span>
     </div> <!-- end title -->
     
     <!-- page-content -->
@@ -194,9 +206,10 @@
       </div><!-- end page-right -->
     </div><!-- end page-content -->
   </div>
+
   <!-- special CTA -->
-  <div class="special-action bg-primary-200 py-24 justify-center">
-    <span class="h4 me-24">加入會員取得9折優惠</span>
+  <div class="special-action bg-primary-200 justify-center py-24">
+    <span class="me-24 me-md-16 cta-text">加入會員取得9折優惠</span>
     <button type="button" class="btn btn-neutral">馬上註冊</button>
   </div>
   <footer>
@@ -204,12 +217,12 @@
       <div class="footer-brand">
         <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg" alt="logo">
       </div>
-      <ul class="footer-link">
+      <ul>
         <li class="footer-item">
-          <a href="./products-list.html">商品列表</a>
+          <a href="product-list-RWD.html">商品列表</a>
         </li>
         <li class="footer-item">
-          <a href="../week1/story.html">品牌故事</a>
+          <a href="./story-RWD.html">品牌故事</a>
         </li>
       </ul>
     </div>
