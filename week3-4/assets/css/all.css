@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import "./story.css";
+@import "./product-list.css";
+@import "./product-detail.css";
 
 /* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -784,15 +786,15 @@ footer {
 }
 
 .gap-12 {
-  gap: 3rem;
+  gap: 0.5rem;
 }
 
 .gap-16 {
-  gap: 4rem;
+  gap: 0.6666rem;
 }
 
-.gap-24 {
-  gap: 6rem;
+.gap-1 {
+  --gutter-x: 1rem;
 }
 
 
