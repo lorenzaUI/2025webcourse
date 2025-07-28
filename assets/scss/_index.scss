@@ -1,0 +1,13 @@
+.bg-banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+
+  .banner-text {
+    padding-top: 288px;
+    padding-bottom: 288px;
+    margin-left: 200px;
+  }
+}
