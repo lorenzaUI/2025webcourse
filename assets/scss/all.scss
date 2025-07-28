@@ -1,0 +1,65 @@
+@import "./variables";
+@import "./reset";
+
+@import "./story.scss";
+@import "./story.scss";
+
+
+body {
+  color: $primary-500;
+}
+
+// 
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: $primary-500;
+
+  &:hover {
+    background-color: darken($primary-500, 15%);
+  }
+}
+
+.box:hover {
+}
+
+
+
+.box-2 {
+  background-color: $primary-200;
+}
+.box-3 {
+  background-color: darken($primary-500, 10%);
+  // SCSS 運算
+}
+
+
+.card {
+  border: 2px solid black;
+  padding: 20px;
+
+  .blue {
+    background-color: blue;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    margin-top: 16px;
+  }
+}
+
+// .blue 必須包含 .card
+// .card.blue {
+//   background-color: blue;
+// }
+
+
+// .card h2 {
+//   font-size: 36px;
+// }
+
+// .card p {
+//   margin-top: 16px;
+// }

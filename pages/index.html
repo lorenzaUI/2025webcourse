@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    卡伯的網站
+    <%- include("./layout/nav") %>
+
+    <main>
+      <h1>主要的內容</h1>
+      <div class="box"></div>
+      <div class="box box-2"></div>
+      <div class="box box-3"></div>
+
+      <div class="card blue">
+        <h2>標題</h2>
+        <p>內文</p>
+      </div>
+    </main>
+
+    <%- include("./layout/footer") %>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
