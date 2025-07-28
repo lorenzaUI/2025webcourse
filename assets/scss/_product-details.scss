@@ -50,12 +50,12 @@
 }
 
 .page-item .btn.active {
-  background-color: var(--primary-300);
+  background-color: $primary-300;
   font-weight: 500;
 }
 
 .page-item .btn:hover:not(:disabled):not(.active) {
-  background-color: var(--neutral-100);
+  background-color: $neutral-100;
   font-weight: 500;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .special-cta p.option-text {
-  color: var(--neutral-600);
+  color: $neutral-600;
   text-align: center;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .accordition-item {
-  border-bottom: 1px solid var(--neutral-300);
+  border-bottom: 1px solid $neutral-300;
 }
 
 .accordition-item .accordition-title {
@@ -99,7 +99,7 @@
 }
 
 .accordition-item .accordition-paragraph {
-  color: var(--neutral-600);
+  color: $neutral-600;
 }
 
 .accordition-item .accordition-paragraph:nth-last-child(1) {

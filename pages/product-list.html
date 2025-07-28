@@ -4,30 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week3-4 | 產品列表頁 歐荻</title>
-  <link rel="stylesheet" href="./assets/css/all.css">
-  <link rel="stylesheet" href="./assets/css/product-list.css">
 </head>
 <body>
-  <nav class="py-16">
-    <div class="navbar"> 
-      <ul>
-        <li class="nav-item nav-brand">
-          <a href="#!">
-            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg" alt="logo">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="./product-list-RWD.html">商品列表</a>
-        </li>
-        <li class="nav-item">
-          <a href="./story-RWD.html">品牌故事</a>
-        </li>
-      </ul>
-      <div class="nav-btn">
-        <button type="button" class="btn btn-icon"><i class="bi bi-person"></i></button>
-      </div>
-    </div>
-  </nav>
+  <%- include("./layout/nav") %>
   <main class="container py-32 py-md-16 mb-48 mb-md-24">
     <div class="row">
       <div class="col-12">
@@ -214,24 +193,9 @@
     <span class="me-24 me-md-16 cta-text">加入會員取得9折優惠</span>
     <button type="button" class="btn btn-neutral">馬上註冊</button>
   </div>
-  <footer>
-    <div class="footer-navbar pb-24">
-      <div class="footer-brand">
-        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg" alt="logo">
-      </div>
-      <ul>
-        <li class="footer-item">
-          <a href="product-list-RWD.html">商品列表</a>
-        </li>
-        <li class="footer-item">
-          <a href="./story-RWD.html">品牌故事</a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright-area">
-      <p class="text-sm">Copyright ©2025 URBNSTYLE</p>
-      <p class="text-sm">All Rights Reserved.</p>
-    </div>
-  </footer>
+
+  <%- include("./layout/footer") %>
+
+  <script type="module" src="../main.js"></script>
 </body>
 </html>

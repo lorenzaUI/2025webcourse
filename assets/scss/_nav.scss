@@ -24,13 +24,15 @@ nav ul {
   margin-right: 40px;
 }
 
-.nav-item a,
-.footer-item a {
-  color: var(--neutral-900);
+.nav-item, 
+.footer-item {
+  a {
+    color: $neutral-900;
 
-  &:hover {
-    color: var(--primary-400);
-    cursor: pointer;
+    &:hover {
+      color: $primary-400;
+      cursor: pointer;
+    }
   }
 }
 
@@ -55,7 +57,7 @@ nav ul {
 }
 
 .breadcrumb-item a {
-  color: var(--neutral-600);
+  color: $neutral-600;
   text-decoration: none;
 }
 
@@ -66,9 +68,9 @@ nav ul {
 .breadcrumb-item:not(:last-child) a::after {
   content: "/";
   padding-left: 12px;
-  color: var(--neutral-300);
+  color: $neutral-300;
 }
 
 .breadcrumb-item:nth-last-child(1) a {
-  color: var(--neutral-900);
+  color: $neutral-900;
 }

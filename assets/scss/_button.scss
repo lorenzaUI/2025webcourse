@@ -31,25 +31,25 @@
 }
 
 .btn-icon .bi:hover {
-  color: var(--primary-400);
+  color: $primary-400;
   cursor: pointer;
 }
 
 .btn-neutral {
-  background-color: var(--neutral-900);
-  color: var(--neutral-0);
+  background-color: $neutral-900;
+  color: $neutral-0;
 }
 
 .btn-neutral:hover:not(:disabled) {
-  background-color: var(--neutral-600);
-  color: var(--neutral-0);
+  background-color: $neutral-600;
+  color: $neutral-0;
 }
 
 .btn-neutral:focus {
-  background-color: var(--neutral-600);
-  color: var(--neutral-0);
+  background-color: $neutral-600;
+  color:  $neutral-0;
   outline: 3px solid;
-  border-color: var(--neutral-border-900);
+  border-color:  $neutral-border-900;
 }
 
 .btn-neutral.disabled {
@@ -57,33 +57,33 @@
 }
 
 .btn-outline-neutral {
-  background-color: var(--neutral-0);
-  border: 1px solid var(--neutral-900);
-  color: var(--neutral-900);
+  background-color:  $neutral-0;
+  border: 1px solid  $neutral-900;
+  color:  $neutral-900;
 }
 
 .btn-outline-neutral:hover:not(:disabled) {
-  background-color: var(--neutral-900);
-  border: 1px solid var(--neutral-900);
-  color: var(--neutral-0);
+  background-color:  $neutral-900;
+  border: 1px solid  $neutral-900;
+  color:  $neutral-0;
   transition: ease-in-out 0.35s;
 }
 
 .btn-outline-neu300 {
-  background-color: var(--neutral-0);
-  border: 1px solid var(--neutral-300);
-  color: var(--neutral-900);
+  background-color:  $neutral-0;
+  border: 1px solid  $neutral-300;
+  color:  $neutral-900;
 }
 
 .btn-outline-neu300.active {
-  background-color: var(--neutral-0);
-  border: 1px solid var(--neutral-900);
-  color: var(--neutral-900);
+  background-color:  $neutral-0;
+  border: 1px solid  $neutral-900;
+  color:  $neutral-900;
 }
 
 .btn-outline-neu300:hover:not(:disabled) {
-  background-color: var(--neutral-900);
-  border: 1px solid var(--neutral-900);
-  color: var(--neutral-0);
+  background-color:  $neutral-900;
+  border: 1px solid  $neutral-900;
+  color:  $neutral-0;
   transition: ease-in-out 0.35s;
 }
