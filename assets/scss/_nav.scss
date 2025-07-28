@@ -1,0 +1,73 @@
+nav {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-item.nav-brand {
+  margin-right: 48px;
+}
+
+.nav-item:nth-child(n+2) {
+  margin-right: 40px;
+}
+
+@media (max-width: 576px) {
+  nav {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .navbar .nav-item:nth-child(n+2) {
+    display: none;
+  }
+}
+
+.nav-item a, .footer-item a {
+  color: var(--neutral-900);
+}
+
+.nav-item a:hover, .footer-item a:hover {
+  color: var(--primary-400);
+  cursor: pointer;
+}
+
+.bi {
+  padding-right: 8px;
+  vertical-align: bottom;
+}
+
+.breadcrumb ol {
+  display: flex;
+}
+
+.breadcrumb-item a {
+  color: var(--neutral-600);
+  text-decoration: none;
+}
+
+.breadcrumb-item:nth-child(n+2) {
+  padding-left: 12px;
+}
+
+.breadcrumb-item:not(:last-child) a::after {
+  content: "/";
+  padding-left: 12px;
+  color: var(--neutral-300);
+}
+
+.breadcrumb-item:nth-last-child(1) a {
+  color: var(--neutral-900);
+}
