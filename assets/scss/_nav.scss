@@ -24,6 +24,16 @@ nav ul {
   margin-right: 40px;
 }
 
+.nav-item a,
+.footer-item a {
+  color: var(--neutral-900);
+
+  &:hover {
+    color: var(--primary-400);
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 576px) {
   nav {
     padding-left: 12px;
@@ -33,15 +43,6 @@ nav ul {
   .navbar .nav-item:nth-child(n+2) {
     display: none;
   }
-}
-
-.nav-item a, .footer-item a {
-  color: var(--neutral-900);
-}
-
-.nav-item a:hover, .footer-item a:hover {
-  color: var(--primary-400);
-  cursor: pointer;
 }
 
 .bi {
