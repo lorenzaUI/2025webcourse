@@ -757,29 +757,29 @@ footer {
 
 
 @media (max-width: 576px) {
-  .py-md-16 {
+  .py-sm-16 {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
-  .py-md-32 {
+  .py-sm-32 {
     padding-top: 32px;
     padding-bottom: 32px;
   }
 
-  .pb-md-32 {
+  .pb-sm-32 {
     padding-bottom: 32px;
   }
 
-  .me-md-16 {
+  .me-sm-16 {
     margin-right: 16px;
   }
 
-  .mb-md-12 {
+  .mb-sm-12 {
     margin-bottom: 12px;
   }
 
-  .mb-md-24 {
+  .mb-sm-24 {
     margin-bottom: 24px;
   }
 }

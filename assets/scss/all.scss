@@ -2,15 +2,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import "./variables";
 @import "./reset";
-@import "./original";
+@import "./base";
 @import "./button";
 @import "./nav";
 @import "./footer";
 
-@import "./index.scss";
-@import "./story.scss";
-@import "./product-list.scss";
-@import "./product-details.scss";
+@import "./index";
+@import "./story";
+@import "./product-list";
+@import "./product-details";
 
 
 

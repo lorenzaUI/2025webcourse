@@ -3,11 +3,77 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
 
   .banner-text {
     padding-top: 288px;
     padding-bottom: 288px;
     margin-left: 200px;
+  }
+}
+
+.product-wall-gap {
+  margin-bottom: 40px;
+}
+
+.product-img {
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.ribbon-box {
+  position: relative;
+
+  .ribbon {
+    color: $primary-400;
+    background-color: $primary-100;
+    padding: 8px 12px;
+    font-size: 14px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+  }
+}
+
+.top-sale-wall {
+  display: flex;
+  .sale-product {
+    img {
+      .overlay {
+        position: absolute;
+        background-color: rgba(241, 243, 247, 0.7);
+        opacity: 0;
+      }
+      &:hover.overlay {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.bg-sale {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner-co-branded.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .sale-text {
+    padding: 100px 80px;
+    text-align: center;
+
+    .h1 {
+      padding-right: 24px;
+      padding-left: 24px;
+      color: $primary-300;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .product-wall-gap {
+    margin-bottom: 24px;
   }
 }

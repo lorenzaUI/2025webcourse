@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,14 +10,103 @@
     <%- include("./layout/nav") %>
 
     <div class="bg-banner">
-      <div class="banner-text text-on-dark">
+      <div class="banner-text text-on-dark"> 
         <p class="fs-1">URBNSTEP</p>
         <p class="h3 mb-48">Your Step, Your Statement</p>
         <button class="btn btn-primary">立即選購</button>
       </div>
     </div>
-    <main class="container py-64 py-md-32 d-flex justify-center">
+    <main class="container py-64 py-sm-32">
+      <div class="mb-32">
+        <p class="fs-2 pb-12 text-center">New Arrival</p>
+        <p class="h2 text-center">新品上市</p>
+      </div>
+      <!-- new arrival -->
+      <div class="col-12 pb-64">
+        <div class="row product-wall-gap">
+          <div class="col-6">
+            <img class="product-img" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/new-1.png" class="pb-12" alt="productImg">
+            <div class="product-name h5">Monoverse</div>
+            <p class="text-md">NT$3,600</p>
+          </div>
+          <div class="col-6">
+            <img class="product-img" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/new-2.png" class="pb-12" alt="productImg">
+            <div class="product-name h5">PLATFORM 404</div>
+            <p class="text-md">NT$2,600</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img class="product-img" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/new-3.png" class="pb-12" alt="productImg">
+            <div class="product-name h5">URBN Force</div>
+            <p class="text-md">NT$3,200</p>
+          </div> 
+          <div class="col-6">
+            <img class="product-img" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/new-4.png" class="pb-12" alt="productImg">
+            <div class="product-name h5">Mode90</div>
+            <p class="text-md">NT$4,000</p>
+          </div> 
+        </div>
+      </div>
+      <!-- end new arrival -->
+      <!-- top sale -->
+      <div class="col-12 py-64">
+        <p class="h2 mb-16">熱銷補貨</p>
+        <div class="top-sale-wall">
+          <div class="row">
+            <div class="col-3">
+              <div class="ribbon-box sale-product">
+                <div class="ribbon">
+                  <span>人氣 No.1</span>
+                </div>
+                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-3.png" alt="topSale">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="ribbon-box sale-product">
+                <div class="ribbon">
+                  <span>人氣 No.1</span>
+                </div>
+                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png" alt="topSale">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="ribbon-box sale-product">
+                <div class="ribbon">
+                  <span>人氣 No.1</span>
+                </div>
+                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-6.png" alt="topSale">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="ribbon-box sale-product">
+                <div class="ribbon">
+                  <span>人氣 No.1</span>
+                </div>
+                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png" alt="topSale">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end top sale -->
     </main>
+    <!-- sale banner -->
+    <div class="py-48">
+      <div class="bg-sale">
+        <div class="sale-text">
+          <div class="en-text mb-16">
+            <span class="fs-2 text-on-dark">URBNSTEP</span>
+            <span class="h1">x</span>
+            <span class="fs-2 text-on-dark">Kevin Chen</span>
+          </div>
+          <p class="h2 text-on-dark mb-32">跨界聯名，限量發售</p>
+          <p class="text-muted text-lg mb-48">新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</p>
+          <button type="button" class="btn btn-primary">立即搶購</button>
+        </div>
+      </div>
+    </div>
+    <!-- sale banner -->
 
     <%- include("./layout/footer") %>
 
