@@ -38,6 +38,23 @@
 .btn-primary {
   background-color: $primary-300;
   color: $neutral-900;
+
+  &:hover:not(:disabled) {
+    background-color: $primary-300;
+    color: $primary-500;
+    transition: ease-in-out 0.2s all;
+  }
+
+  &:focus {
+    background-color: $primary-300;
+    color:  $primary-500;
+    outline: 3px solid;
+    border-color:  $primary-border-300;
+  }
+
+  &.disabled {
+    opacity: 0.4;
+  }
 }
 
 .btn-neutral {

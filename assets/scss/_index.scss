@@ -13,12 +13,17 @@
 
 .product-wall-gap {
   margin-bottom: 40px;
-}
 
-.product-img {
-  &:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  .product-img {
+    margin-bottom: 12px;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .product-name {
+    margin-bottom: 4px;
   }
 }
 
@@ -59,21 +64,164 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
 
-  .sale-text {
-    padding: 100px 80px;
-    text-align: center;
+  .h1 {
+    padding-right: 24px;
+    padding-left: 24px;
+    color: $primary-300;
+  }
 
-    .h1 {
-      padding-right: 24px;
-      padding-left: 24px;
+  .star-img {
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px)
+  }
+
+  .sparkle-img {
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    right: calc(50% - 357px)
+  }
+}
+
+.category {
+  position: relative;
+  cursor: pointer;
+
+  .category-text {
+    position: absolute;
+    color: $neutral-0;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .h3:hover {
+      transition: ease-in-out 0.2s all;
       color: $primary-300;
     }
   }
 }
 
-@media (max-width: 576px) {
+.inspiration-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.inspiration-col-4 {
+  width: calc(100% / 12 * 4);
+  padding: 4px;
+}
+
+.inspiration-col-6 {
+  width: calc(100% / 12 * 6);
+  padding: 4px;
+}
+
+.inspiration-col-12 {
+  width: calc(100% / 12 * 12);
+  padding: 4px;
+}
+
+@media (max-width: 767px) {
+  .bg-banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner-sm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .banner-text {
+      padding: 155px 24px;
+      margin: 0 auto;
+    }
+  }
+
+  .bg-sale {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner-co-branded-sm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 64px 0;
+    text-align: center;
+    position: relative;
+
+    .star-img {
+      position: absolute;
+      width: 48px;
+      top: 32px;
+      left: -22px;
+    }
+
+    .sparkle-img {
+      position: absolute;
+      width: 76px;
+      bottom: 104px;
+      right: -26px;
+    }
+  }
+
+  .category {
+    position: relative;
+    cursor: pointer;
+
+    .category-text {
+      position: absolute;
+      color: $neutral-0;
+      background-color: rgba(0, 0, 0, 0.4);
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .h3:hover {
+        transition: ease-in-out 0.2s all;
+        color: $primary-300;
+      }
+    }
+  }
+
   .product-wall-gap {
     margin-bottom: 24px;
+  }
+
+  .product-md-row {
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+
+  .product-md-col {
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .inspiration-row {
+    flex-wrap: nowrap;
+    margin: 0 -8px;
+    img {
+      min-width: 300px;
+    }
+  }
+
+  .inspiration-col-4,
+  .inspiration-col-6,
+  .inspiration-col-12 {
+    width: unset;
+    padding: 0 8px;
   }
 }
