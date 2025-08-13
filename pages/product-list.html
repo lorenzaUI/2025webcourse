@@ -8,23 +8,19 @@
 <body>
   <%- include("./layout/nav") %>
   <main class="container py-32 py-md-16 mb-48 mb-md-24">
-    <div class="row">
-      <div class="col-12">
-        <!-- breadcrumb -->
-        <div class="page-title-box breadcrumb">
-          <ol>
-            <li class="breadcrumb-item">
-              <a href="#!">首頁</a>
-            </li>
-            <li class="breadcrumb-item">
-              <a>女鞋</a>
-            </li>
-            <li class="breadcrumb-item active">
-              <a>所有商品</a>
-            </li>
-          </ol>
-        </div>
-      </div>
+    <!-- breadcrumb -->
+    <div class="page-title-box breadcrumb">
+      <ol>
+        <li class="breadcrumb-item">
+          <a href="#!">首頁</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a>女鞋</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a>所有商品</a>
+        </li>
+      </ol>
     </div>
 
     <!-- page-title -->
@@ -34,44 +30,33 @@
     
     <!-- page-content -->
     <div class="page-content">
-      <div class="row">
-        <!-- page-left -->
-        <div class="menu col-2 d-none d-md-block">
-          <ul>
-            <li class="menu-item">
-              <a href="#!">所有商品</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!">慢跑鞋</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!">滑板鞋</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!">厚底鞋</a>
-            </li>
-            <li class="menu-item">
-              <a href="#!">限定 / 聯名企劃</a>
-            </li>
-          </ul>
-        </div><!-- end page-left -->
-        
-        <!-- page-right -->
-        <div class="page-right col-md-10 col-12">
-          <div class="product-list">
-            <a detail-link href="/product-detail-RWD.html">
-              <div class="product-card">
-                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png" alt="product">
-                <div class="card-title h6">
-                  <span>PLATFORM 404</span>
-                </div>
-                <div class="price">
-                  <span>NT$2,600</span>
-                </div>
-              </div>
-            </a>
+      <!-- page-left -->
+      <div class="menu">
+        <ul>
+          <li class="menu-item">
+            <a href="#!">所有商品</a>
+          </li>
+          <li class="menu-item">
+            <a href="#!">慢跑鞋</a>
+          </li>
+          <li class="menu-item">
+            <a href="#!">滑板鞋</a>
+          </li>
+          <li class="menu-item">
+            <a href="#!">厚底鞋</a>
+          </li>
+          <li class="menu-item">
+            <a href="#!">限定 / 聯名企劃</a>
+          </li>
+        </ul>
+      </div><!-- end page-left -->
+      
+      <!-- page-right -->
+      <div class="page-right">
+        <div class="product-list">
+          <a detail-link href="../pages/product-detail.html">
             <div class="product-card">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-1.png" alt="product">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png" alt="product">
               <div class="card-title h6">
                 <span>PLATFORM 404</span>
               </div>
@@ -79,112 +64,121 @@
                 <span>NT$2,600</span>
               </div>
             </div>
-            <div class="product-card">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-2.png" alt="product">
-              <div class="card-title h6">
-                <span>VM001</span>
-              </div>
-              <div class="price">
-                <span>NT$2,600</span>
-              </div>
+          </a>
+          <div class="product-card">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-1.png" alt="product">
+            <div class="card-title h6">
+              <span>PLATFORM 404</span>
             </div>
-            <div class="product-card">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-3.png" alt="product">
-              <div class="card-title h6">
-                <span>Melty Kiss</span>
-              </div>
-              <div class="price">
-                <span>NT$4,000</span>
-              </div>
+            <div class="price">
+              <span>NT$2,600</span>
             </div>
-            <div class="product-card">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png" alt="product">
-              <div class="card-title h6">
-                <span>BOOMBLOK</span>
-              </div>
-              <div class="price">
-                <span>NT$3,200</span>
-              </div>
+          </div>
+          <div class="product-card">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-2.png" alt="product">
+            <div class="card-title h6">
+              <span>VM001</span>
             </div>
-            <div class="product-card">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-5.png" alt="product">
-              <div class="card-title h6">
-                <span>BOOMBLOK</span>
-              </div>
-              <div class="price">
-                <span>NT$3,200</span>
-              </div>
+            <div class="price">
+              <span>NT$2,600</span>
             </div>
-            <div class="product-card">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-5.png" alt="product">
-              <div class="card-title h6">
-                <span>R:UNER</span>
-              </div>
-              <div class="price">
-                <span>NT$4,000</span>
-              </div>
+          </div>
+          <div class="product-card">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-3.png" alt="product">
+            <div class="card-title h6">
+              <span>Melty Kiss</span>
             </div>
-            <div class="product-card">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-6.png" alt="product">
-              <div class="card-title h6">
-                <span>Sugar Snap</span>
-              </div>
-              <div class="price">
-                <span>NT$4,000</span>
-              </div>
+            <div class="price">
+              <span>NT$4,000</span>
             </div>
-            <div class="product-card">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-7.png" alt="product">
-              <div class="card-title h6">
-                <span>Neofoam</span>
-              </div>
-              <div class="price">
-                <span>NT$4,000</span>
-              </div>
+          </div>
+          <div class="product-card">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png" alt="product">
+            <div class="card-title h6">
+              <span>BOOMBLOK</span>
             </div>
-          </div><!-- end product-list -->
+            <div class="price">
+              <span>NT$3,200</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-5.png" alt="product">
+            <div class="card-title h6">
+              <span>BOOMBLOK</span>
+            </div>
+            <div class="price">
+              <span>NT$3,200</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-5.png" alt="product">
+            <div class="card-title h6">
+              <span>R:UNER</span>
+            </div>
+            <div class="price">
+              <span>NT$4,000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-6.png" alt="product">
+            <div class="card-title h6">
+              <span>Sugar Snap</span>
+            </div>
+            <div class="price">
+              <span>NT$4,000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-7.png" alt="product">
+            <div class="card-title h6">
+              <span>Neofoam</span>
+            </div>
+            <div class="price">
+              <span>NT$4,000</span>
+            </div>
+          </div>
+        </div><!-- end product-list -->
 
-          <!-- pagination -->
-          <ul class="pagination">
-            <li class="me-12 page-item">
-              <button type="button" class="btn" disabled>
-                <i class="bi bi-chevron-left"></i>
-              </button>
-            </li>
-            <li class="me-8 page-item">
-              <button type="button" class="btn active">
-                1
-              </button>
-            </li>
-            <li class="me-8 page-item">
-              <button type="button" class="btn">
-                2
-              </button>
-            </li>
-            <li class="me-8 page-item">
-              <button type="button" class="btn">
-                3
-              </button>
-            </li>
-            <li class="me-8 page-item">
-              <button type="button" class="btn">
-                ...
-              </button>
-            </li>
-            <li class="me-8 page-item">
-              <button type="button" class="btn">
-                10
-              </button>
-            </li>
-            <li class="page-item">
-              <button type="button" class="btn">
-                <i class="bi bi-chevron-right"></i>
-              </button>
-            </li>
-          </ul>
-          <!-- end pagination -->
-        </div><!-- end page-right -->
-      </div>
+        <!-- pagination -->
+        <ul class="pagination">
+          <li class="me-12 page-item">
+            <button type="button" class="btn" disabled>
+              <i class="bi bi-chevron-left"></i>
+            </button>
+          </li>
+          <li class="me-8 page-item">
+            <button type="button" class="btn active">
+              1
+            </button>
+          </li>
+          <li class="me-8 page-item">
+            <button type="button" class="btn">
+              2
+            </button>
+          </li>
+          <li class="me-8 page-item">
+            <button type="button" class="btn">
+              3
+            </button>
+          </li>
+          <li class="me-8 page-item">
+            <button type="button" class="btn">
+              ...
+            </button>
+          </li>
+          <li class="me-12 page-item">
+            <button type="button" class="btn">
+              10
+            </button>
+          </li>
+          <li class="page-item">
+            <button type="button" class="btn">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </li>
+        </ul>
+        <!-- end pagination -->
+      </div><!-- end page-right -->
     </div><!-- end page-content -->
   </main>
 

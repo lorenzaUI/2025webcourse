@@ -44,6 +44,8 @@
 
 .top-sale-wall {
   display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
   .sale-product {
     img {
       .overlay {
@@ -89,29 +91,36 @@
   }
 }
 
-.category {
-  position: relative;
-  cursor: pointer;
+.series-row {
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
 
-  .category-text {
-    position: absolute;
-    color: $neutral-0;
-    background-color: rgba(0, 0, 0, 0.4);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .category {
+    position: relative;
+    cursor: pointer;
 
-    .h3:hover {
-      transition: ease-in-out 0.2s all;
-      color: $primary-300;
+    .category-text {
+      position: absolute;
+      color: $neutral-0;
+      background-color: rgba(0, 0, 0, 0.4);
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .h3:hover {
+        transition: ease-in-out 0.2s all;
+        color: $primary-300;
+      }
     }
   }
 }
+
 
 .inspiration-row {
   display: flex;

@@ -7,13 +7,13 @@
 </head>
 <body>
   <%- include("./layout/nav") %>
-  <main class="container py-64 py-md-32 d-flex justify-center">
-    <div class="row">
+  <main>
+    <div class="container py-64 d-flex justify-center">
       <div class="col-12">
-        <div class="row gap-1">
+        <div class="row">
           <!-- page-left -->
-          <div class="col-7">
-            <div class="product-img">
+          <div class="col-7 col-md-12 mb-md-24">
+            <div class="product-detail-img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/image.png" alt="img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/image-1.png" alt="img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/image-2.png" alt="img">
@@ -26,9 +26,9 @@
           </div><!-- end page-left -->
 
           <!-- page-right -->
-          <div class="col-5">
+          <div class="col-5 col-md-12">
             <!-- breadcrumb -->
-            <div class="breadcrumb pb-12">
+            <div class="breadcrumb pb-12 pb-md-8">
               <ol>
                 <li class="breadcrumb-item">
                   <a href="#!">首頁</a>
@@ -47,10 +47,8 @@
 
             <!-- pruduct-content -->
             <div class="product-content mb-32">
-              <p class="h2 mb-16 title">Platform 404</p>
-              <p class="h5 price">NT$2,600
-                <span class="text-sm original-price">NT$3,200</span>
-              </p>
+              <p class="h2 mb-16 mb-md-12 title">Platform 404</p>
+              <p class="h5 price mb-16 mb-md-12">NT$2,600<span class="text-sm original-price">NT$3,200</span></p>
               <p class="paragraph mb-12">
                 Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。
               </p>
@@ -63,19 +61,19 @@
                 <p class="mb-8">顏色</p>
                 <div class="btn-wrapper">
                   <!-- option 1 -->
-                  <div class="option active">
-                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png" alt="optionImg">
+                  <div class="option" tabindex="0" aria-disabled="true">
+                    <img class="option-img" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png" alt="optionImg">
                     <p class="option-text">黑色</p>
                   </div>
                   <!-- option 2 -->
-                  <div class="option">
-                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-1.png" alt="optionImg">
+                  <div class="option" tabindex="0">
+                    <img class="option-img" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-1.png" alt="optionImg">
                     <p class="option-text">卡其色</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="size mb-48">
+            <div class="size mb-48 mb-md-24">
               <p class="mb-8">尺寸</p>
               <div class="btn-wrapper mb-8">
                 <button type="button" class="btn btn-outline-neu300 size-btn active">35(22.5cm)</button>
@@ -91,8 +89,8 @@
               <span class="text-sm text-danger-300">僅剩3雙</span>
             </div>
             <div class="product-action">
-              <button type="button" class="btn btn-outline-neutral"><i class="bi bi-heart"></i>加入收藏</button>
-              <button type="button" class="btn btn-neutral"><i class="bi bi-handbag"></i>門市預約試穿</button> 
+              <button type="button" class="btn btn-outline-neutral add-bookmark"><i class="bi bi-heart"></i>加入收藏</button>
+              <button type="button" class="btn btn-neutral go-reserve"><i class="bi bi-handbag"></i>門市預約試穿</button> 
             </div>
             <div class="accordion">
               <!-- 商品材質 -->
@@ -146,6 +144,48 @@
       </div>
     </div>
   </main>
+  <!-- guess you like -->
+  <div class="container py-64 py-md-40">
+        <p class="h2 h4-md mb-16">熱銷補貨</p>
+        <div class="top-sale-wall">
+          <div class="row flex-md-nowrap overflow-x-md-auto">
+            <div class="col-3 product-md-col">
+              <div class="ribbon-box sale-product">
+                <div class="ribbon">
+                  <span>人氣 No.1</span>
+                </div>
+                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-3.png" alt="topSale">
+              </div>
+            </div>
+            <div class="col-3 product-md-col">
+              <div class="ribbon-box sale-product">
+                <div class="ribbon">
+                  <span>人氣 No.1</span>
+                </div>
+                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png" alt="topSale">
+              </div>
+            </div>
+            <div class="col-3 product-md-col">
+              <div class="ribbon-box sale-product">
+                <div class="ribbon">
+                  <span>人氣 No.1</span>
+                </div>
+                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-6.png" alt="topSale">
+              </div>
+            </div>
+            <div class="col-3 product-md-col">
+              <div class="ribbon-box sale-product">
+                <div class="ribbon">
+                  <span>人氣 No.1</span>
+                </div>
+                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png" alt="topSale">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- end guess you like -->
+
   <!-- special CTA -->
   <div class="special-action bg-primary-200 py-24 justify-center">
     <span class="h4 me-24">加入會員取得9折優惠</span>
