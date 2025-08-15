@@ -1,3 +1,7 @@
+.main-content {
+  padding: 64px 0;
+}
+
 .paragraph {
   text-align: justify;
 }
@@ -55,6 +59,16 @@
 .special-action  {
   display: flex;
   align-items: center;
+
+  .special-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 24px;
+  }
+
+  .special-btn {
+    padding: 12px 24px;
+  }
 }
 
 .btn-wrapper {
@@ -124,4 +138,58 @@
 
 .accordition-item .accordition-paragraph:nth-last-child(1) {
   padding-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0 12px;
+  }
+
+  .product-detail-img {
+    display: flex;
+    overflow-x: auto;
+    margin-left: -18px;
+    margin-right: -18px;
+    gap: 0;
+  }
+
+  .like-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .product-action {
+    flex-direction: row-reverse;
+
+    .go-reserve {
+      flex: 2;
+    }
+    .add-bookmark {
+      width: 48px;
+      padding: 0;
+      background: none;
+      border: none;
+      align-items: center;
+    }
+    .add-bookmark i.bi {
+      font-size: 24px;
+      padding-right: 0;
+    }
+    .add-bookmark span{
+      display: none;
+    }
+  }
+  .special-action {
+    padding: 24px;
+
+    .special-text {
+      font-size: 20px;
+      font-weight: 700;
+      margin-right: 16px;
+    }
+
+    .special-btn {
+      padding: 8px 16px;
+    }
+  }
+  
 }

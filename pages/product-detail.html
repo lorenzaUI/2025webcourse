@@ -8,12 +8,12 @@
 <body>
   <%- include("./layout/nav") %>
   <main>
-    <div class="container py-64 d-flex justify-center">
+    <div class="container main-content d-flex justify-center">
       <div class="col-12">
         <div class="row">
           <!-- page-left -->
           <div class="col-7 col-md-12 mb-md-24">
-            <div class="product-detail-img">
+            <div class="product-detail-img flex-md-nowrap overflow-x-md-auto">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/image.png" alt="img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/image-1.png" alt="img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/image-2.png" alt="img">
@@ -89,8 +89,8 @@
               <span class="text-sm text-danger-300">僅剩3雙</span>
             </div>
             <div class="product-action">
-              <button type="button" class="btn btn-outline-neutral add-bookmark"><i class="bi bi-heart"></i>加入收藏</button>
-              <button type="button" class="btn btn-neutral go-reserve"><i class="bi bi-handbag"></i>門市預約試穿</button> 
+              <button type="button" class="btn btn-outline-neutral add-bookmark"><i class="bi bi-heart"></i><span>加入收藏</span></button>
+              <button type="button" class="btn btn-neutral go-reserve"><i class="bi bi-handbag"></i><span>門市預約試穿</span></button> 
             </div>
             <div class="accordion">
               <!-- 商品材質 -->
@@ -145,41 +145,21 @@
     </div>
   </main>
   <!-- guess you like -->
-  <div class="container py-64 py-md-40">
-        <p class="h2 h4-md mb-16">熱銷補貨</p>
+  <div class="container like-content">
+        <p class="h2 h4-md mb-16">你可能也喜歡...</p>
         <div class="top-sale-wall">
           <div class="row flex-md-nowrap overflow-x-md-auto">
             <div class="col-3 product-md-col">
-              <div class="ribbon-box sale-product">
-                <div class="ribbon">
-                  <span>人氣 No.1</span>
-                </div>
-                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-3.png" alt="topSale">
-              </div>
+              <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-3.png" alt="topSale">
             </div>
             <div class="col-3 product-md-col">
-              <div class="ribbon-box sale-product">
-                <div class="ribbon">
-                  <span>人氣 No.1</span>
-                </div>
-                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png" alt="topSale">
-              </div>
+              <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png" alt="topSale">
             </div>
             <div class="col-3 product-md-col">
-              <div class="ribbon-box sale-product">
-                <div class="ribbon">
-                  <span>人氣 No.1</span>
-                </div>
-                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-6.png" alt="topSale">
-              </div>
+              <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-6.png" alt="topSale">
             </div>
             <div class="col-3 product-md-col">
-              <div class="ribbon-box sale-product">
-                <div class="ribbon">
-                  <span>人氣 No.1</span>
-                </div>
-                <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png" alt="topSale">
-              </div>
+              <img class="overlay" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png" alt="topSale">
             </div>
           </div>
         </div>
@@ -188,8 +168,8 @@
 
   <!-- special CTA -->
   <div class="special-action bg-primary-200 py-24 justify-center">
-    <span class="h4 me-24">加入會員取得9折優惠</span>
-    <button type="button" class="btn btn-neutral">馬上註冊</button>
+    <span class="special-text">加入會員取得9折優惠</span>
+    <button type="button" class="btn btn-neutral special-btn">馬上註冊</button>
   </div>
   <%- include("./layout/footer") %>
 
